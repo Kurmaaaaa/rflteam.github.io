@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Russo One&display=swap');
+
+@media(max-width:427px) {
+    .row{
+        display: -ms-flexbox;
+    }
+}
+
+
+body{
+    font-family: Russo One;
+    background: linear-gradient(#ffce00, rgb(0, 0, 0));
+}   
+
+.header{
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-link{
+    color: #ffce00;
+}
+
+.navbar-nav .nav-link.active{
+    color: #ffea97;
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+
+.navbar-toggler{
+    background-color: #ffce00;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2{
+    margin: 20px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: #000000;
+    color: #ffce00;
+    border-radius: 5px;
+}
+
+
+.row{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffcc00;
+    font-size: 50px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+    transform: scale(1);
+    
+}
+
+.row:hover {
+    transform: scale(1.015);
+   }
+
+.data{
+   
+    background-color: #000000;
+    color: #ffcc00;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+
+.data:hover {
+    transform: scale(1.013);
+   }
