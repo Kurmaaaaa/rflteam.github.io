@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Russo One&display=swap');
 
+
 body{
     font-family: Russo One;
     background: linear-gradient(#ffce00, rgb(0, 0, 0));
@@ -30,6 +31,23 @@ h1{
     text-align: center;
 }
 
+h2{
+    margin: 80px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+.card{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0000008f;
+    border: #00000000;
+    color: #ffce00;
+    transition: transform 0.5s ease;
+    transform: scale(1);
+} 
+
 .card:hover {
     transform: scale(1.03);
    }
@@ -44,6 +62,11 @@ h1{
 h5{
     font-size: 18px;
     margin-top: 10px;
+}
+
+.story{
+    color: #ffce00;
+    
 }
 
 .squad{
@@ -76,19 +99,8 @@ span1{
     color: #64ff69;
 }
 
-span2{
-    color: #eeeeee;
-}
-
-.carousel{
-    filter: brightness(50%);
-}
-
-.content{
-    color: #ffce00;
-}
-
 .info{
+    margin-top: 10px;
     color: #ffce00;
     padding: 20px;
     background-color: #000000;
@@ -96,30 +108,28 @@ span2{
 
 }
 
-.list-group-item{
-    transition: transform 0.5s ease;
-    transform: scale(1);
-    margin: 10px;
-    border-width: 3px;
-    border-color: #251e02;
-    font-size: 20px;
-    background-color: #ffcc00;
-    color: #000000;
+.row{
+    margin-top: 10px;
+    padding: 15px;
+    color: #ffcc00;
+    border-radius: 5px;
 }
 
-.list-group-item:hover {
-    transform: scale(1.013);
-   }
+video{
+    width: 100%;
+}
 
+ol{
+    font-size: 25px;
+}
 
+span{
+    color: #df2727;
+}
 
-
-
-
-
-
-
-
+span2{
+    color:#64ff69;
+}
 
 
 

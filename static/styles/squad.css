@@ -31,12 +31,6 @@ h1{
     text-align: center;
 }
 
-h2{
-    margin-top: 20px;
-    text-align: center;
-    color: #0000003d;
-}
-
 .card{
     margin-top: 20px;
     margin-left: auto;
@@ -99,18 +93,6 @@ span1{
     color: #64ff69;
 }
 
-span2{
-    color: #eeeeee;
-}
-
-.carousel{
-    filter: brightness(50%);
-}
-
-.content{
-    color: #ffce00;
-}
-
 .info{
     margin-top: 10px;
     color: #ffce00;
@@ -120,22 +102,3 @@ span2{
 
 }
 
-.list-group-item{
-    transition: transform 0.5s ease;
-    transform: scale(1);
-    margin: 10px;
-    border-width: 3px;
-    border-color: #251e02;
-    font-size: 25px;
-    background-color: #ffcc00;
-    color: #000000;
-}
-
-.list-group-item:hover {
-    transform: scale(1.013);
-   }
-.data{
-   
-    background-color: #00000096;
-    color: #ffcc00;
-}
