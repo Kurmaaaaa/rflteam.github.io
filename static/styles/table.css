@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Russo One&display=swap');
+
+body{
+    font-family: Russo One;
+    background-color: #ffce00
+}
+
+.header{
+    background-color: black;
+}
+
+.nav-link{
+    color: #ffce00
+}
+
+.navbar-nav .nav-link.active{
+    color: #ffea97;
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+
+.navbar-toggler{
+    background-color: #ffce00
+}
+
+table {
+    background-color: #000000;
+    color: #ffce00;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffcc0062;
+    transition: background-color 0.3s;
+}
+th {
+    background-color: #000000; /* Цвет заголовков */
+    color: #ffce00;
+}
+tr:hover {
+    background-color: #ffcc004a/* Эффект при наведении на строку */
+}
+
+
+
+
+
+
