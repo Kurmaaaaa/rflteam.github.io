@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Russo One&display=swap');
-
+@media(max-width:427px) {
+    .row{
+        display: -ms-flexbox;
+    }
+    h2{
+        font-size: 20px;;
+    }
+}
 body{
     font-family: Russo One;
     background-color: #ffce00
+	
 }
 
 .header{
@@ -30,24 +38,28 @@ body{
 }
 
 
-.container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+
 
 table {
-    margin: auto;
+	margin-top: 1px;
 	width: 100%;
+  	max-width: 100%;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	font-size: 12px;
+
 }
+
+th button{
+	background-color: #ffce00;
+	border: 0;
+	border-radius: 10px;
+}		
 
 th,
 td {
-	padding: 15px;
+	padding: 1rem;
 	background-color: rgba(255,255,255,0.2);
 	color: #000000;
 }
@@ -85,7 +97,8 @@ tbody {
 		}
 	}
 }
-    
+
+
 
 
 

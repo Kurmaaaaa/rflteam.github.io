@@ -59,11 +59,26 @@
     </header>
 
     <section>
-      <div class="alert alert-light" role="alert">
-        Данная страница находится в разработке!
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th><button id="name">Имя</button></th>
+              <th><button id="type">Позиция</button></th>
+              <th><button id="hp">Рейтинг</button></th>
+              <th><button id="attack">М</button></th>
+              <th><button id="defense">Г</button></th>
+              <th><button id="spAttack">П</button></th>
+              <th><button id="spDefense">Г+П</button></th>
+              <th><button id="speed">ЖК</button></th>
+              <th><button id="total">КК</button></th>
+            </tr>
+          </thead>
+          <tbody id="table-content"></tbody>
+        </table>
       </div>
     </section>
-
+    <script src="table.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
