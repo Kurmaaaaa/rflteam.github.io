@@ -61,12 +61,18 @@ th button{
 
 th,
 td {
+	
 	padding: 1rem;
 	background-color: rgba(255,255,255,0.2);
 	color: #000000;
 }
 
+td{
+	border: #00000085 solid 1px;
+}
+
 th {
+	
 	text-align: left;
 }
 
