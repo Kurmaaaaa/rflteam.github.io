@@ -38,7 +38,9 @@ body{
 }
 
 
-
+.table-container{
+	overflow-x: auto;
+}
 
 table {
 	margin-top: 1px;
