@@ -1,0 +1,329 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ffd700; /* Золотой цвет для заголовков */
+  }
+
+  a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #e6b800;
+  }
+
+  /* Навбар */
+  .navbar {
+    background-color: rgba(26, 26, 26, 0.9) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .nav-link {
+    color: #ffd700 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffd700;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-link.active {
+    color: #e6b800 !important;
+  }
+
+  .passion {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #FFD700;
+    display: inline-block;
+    margin: 0 5px;
+    transform: rotate(4deg);
+}
+    .passion1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #FFD700;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+  /* Герой-секция */
+  .hero-section {
+    background: url("team-banner.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffd700;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-section .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+
+  .hero-button {
+    background-color: #ffd700;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+
+  .hero-button:hover {
+    background-color: #e6b800;
+    transform: translateY(-3px);
+  }
+
+  /* Карточки игроков */
+  .text-gold {
+    color: #FFD700;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px; /* Отступ сверху для разделения категорий */
+}
+
+/* Стили для карточек игроков */
+.player-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.player-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);
+    background-color: rgba(255, 215, 0, 0.1);
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.player-card img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover img {
+    transform: scale(1.05);
+}
+
+.player-card h3 {
+    color: #FFD700;
+    transition: color 0.3s ease;
+}
+
+.player-card:hover h3 {
+    color: #fff;
+}
+
+.player-card p {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.player-card:hover p {
+    color: #FFD700;
+}
+
+.table {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);
+}
+
+.table thead {
+    background: linear-gradient(135deg, #FFD700, #e6b800);
+    color: #000;
+}
+
+.table th {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #000;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-hover tbody tr:hover td {
+    color: #FFD700;
+}
+
+  /* Таблица статистики */
+  #player-stats {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #player-stats:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);
+  }
+
+  #player-stats thead {
+    background: linear-gradient(135deg, #ffd700, #e6b800);
+    color: #000;
+  }
+
+  #player-stats th,
+  #player-stats td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+  }
+
+  #player-stats tbody tr {
+    transition: background-color 0.3s ease;
+  }
+
+  #player-stats tbody tr:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+  }
+
+  /* Футер */
+  .footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #1a1a1a;
+  }
+
+  .footer .social-icons a {
+    color: #ffd700;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer .social-icons a:hover {
+    color: #e6b800;
+  }
+
+  /* Анимации */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
